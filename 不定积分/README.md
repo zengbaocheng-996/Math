@@ -313,10 +313,128 @@ $$
 \end{align}
 $$
 
+# 4
+
 $$
 \begin{align}
-&\int\arcsin x\arccos x dx\\
-=&
+&\int x\tan^2(x^2+1)dx\\
+=&\frac{1}{2}\int\tan^2(x^2+1)d(x^2+1)\\
+=&\frac{1}{2}\int\tan^2tdt\\
+=&\frac{1}{2}\int\frac{\sin^2t}{\cos^2t}dt\\
+=&\frac{1}{2}\int\frac{1-\cos^2t}{\cos^2t}dt\\
+=&\frac{1}{2}(\int\frac{1}{\cos^2t}dt-\int 1dt)\\
+=&\frac{1}{2}(\tan t- t)+C\\
+=&\frac{1}{2}[\tan (x^2+1)- (x^2+1)]+C\\
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{e^x}{e^{2x}+2e^x+5}dx\\
+=&\int\frac{1}{(e^x+1)^2+4}d(e^x+1)\\
+=&\frac{1}{4}\int\frac{1}{\frac{1}{4}(e^x+1)^2+1}d(e^x+1)\\
+=&\frac{2}{4}\int\frac{1}{[\frac{1}{2}(e^x+1)]^2+1}d[\frac{1}{2}(e^x+1)]\\
+=&\frac{1}{2}\arctan [\frac{1}{2}(e^x+1)]+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{dx}{\sqrt{x+x^2}}\\
+=&2\int\frac{1}{2\sqrt{x}\sqrt{1+x}}dx\\
+=&2\int\frac{1}{\sqrt{1+x}}d\sqrt{x}\\
+=&2\int\frac{1}{\sqrt{1+t^2}}dt\\
+=&2\ln(\sqrt{t^2}+\sqrt{1+t^2})+C\\
+=&2\ln(\sqrt{x}+\sqrt{1+x})+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{\sin{2x}}{\sqrt{\sin^4{x}+1}}dx\\
+=&\int\frac{1}{\sqrt{\sin^4x+1}}d\sin^2x\\
+=&2\int\frac{1}{\sqrt{1+t^2}}dt\\
+=&2\ln(\sqrt{t^2}+\sqrt{1+t^2})+C\\
+=&2\ln(\sin^2x+\sqrt{1+\sin^4x})+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\sqrt{\frac{1+x}{1-x}}dx\\
+=&\int\frac{1+x}{\sqrt{1-x^2}}dx\\
+=&\int\frac{1}{\sqrt{1-x^2}}dx+\int\frac{x}{\sqrt{1-x^2}}dx\\
+=&\arcsin x-\frac{1}{2}\int\frac{1}{\sqrt{1-x^2}}d(1-x^2)\\
+=&\arcsin x-\sqrt{1-x^2}+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{x+1}{x(1+xe^x)}dx\\
+=&\int\frac{e^x(x+1)}{e^xx(1+xe^x)}dx\\
+=&\int\frac{1}{e^xx(1+xe^x)}de^xx\\
+=&\int\frac{1}{t(1+t)}dt\\
+=&\int\frac{1}{t}-\frac{1}{1+t}dt\\
+=&\ln|\frac{t}{1+t}|+C\\
+=&\ln|\frac{xe^x}{1+xe^x}|+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{e^x}{\sqrt{4-e^{2x}}}dx\\
+=&\int\frac{1}{\sqrt{4-e^{2x}}}de^x\\
+=&\int\frac{1}{\sqrt{1-(\frac{1}{2}e^x)^2}}d(\frac{1}{2}e^x)\\
+=&\arcsin(\frac{1}{2}e^x)+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{\arctan e^x}{e^x}dx\\
+=&\int\frac{\arctan e^x}{e^{2x}}de^x\\
+=&-\int\arctan e^xd\frac{1}{e^x}\\
+=&-(\frac{\arctan e^x}{e^x}-\int\frac{e^x}{e^x(1+e^{2x})}dx)\\
+=&\int\frac{e^{-2x}}{1+e^{-2x}}dx-\frac{\arctan e^x}{e^x}\\
+=&-\frac{1}{2}\int\frac{1}{1+e^{-2x}}d(1+e^{-2x})-\frac{\arctan e^x}{e^x}\\
+=&-\frac{1}{2}\ln(1+e^{-2x})-\frac{\arctan e^x}{e^x}+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{dx}{2x^2-x-1}dx\\
+=&\int\frac{1}{3}\frac{1}{x-1}-\frac{2}{3}\frac{1}{2x+1}dx\\
+=&\frac{1}{3}\ln|x-1|-\frac{1}{3}\ln|2x+1|+C\\
+=&\frac{1}{3}\ln|\frac{x-1}{2x+1}|+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{2x+1}{x(1+x^2)}dx\\
+=&2\int\frac{1}{1+x^2}dx+\frac{1}{2}\int\frac{1}{x^2(1+x^2)}dx^2\\
+=&2\arctan(x)+\frac{1}{2}\ln\frac{x^2}{1+x^2}+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int e^{\sqrt{x}}dx\\
+=&2\int te^tdt\\
+=&2(t-1)e^t+C\\
+=&2(\sqrt{x}-1)e^{\sqrt{x}}+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int x\tan^2xdx\\
+=&\int x(\frac{1}{\cos^2 x}-1)dx\\
+=&\int xd\tan x -\frac{1}{2}x^2\\
+=&x\tan x-\int\tan xdx-\frac{1}{2}x^2\\
+=&x\tan x+\ln|\cos x|-\frac{1}{2}x^2+C
 \end{align}
 $$
 

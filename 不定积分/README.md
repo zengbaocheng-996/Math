@@ -438,3 +438,120 @@ $$
 \end{align}
 $$
 
+# 5
+
+$$
+\begin{align}
+&\int\frac{\sin{2x}}{1+4\cos^4x}dx\\
+=&-\int\frac{1}{1+4\cos^4x}d\cos^2x\\
+=&-\frac{1}{2}\int\frac{1}{1+(2t)^2}d(2t)\\
+=&-\frac{1}{2}\arctan(2\cos^2x)+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int x\ln(1+x)dx\\
+=&\frac{1}{2}\int \ln(1+x)dx^2\\
+=&\frac{1}{2}[x^2\ln(1+x)-\int\frac{x^2}{1+x}dx]\\
+=&\frac{1}{2}[x^2\ln(1+x)-\int\frac{x^2-1}{1+x}dx-\int\frac{1}{x+1}d(x+1)]\\
+=&\frac{1}{2}[x^2\ln(1+x)-\int xdx+\int 1dx-\ln(x+1)]\\
+=&\frac{1}{2}[x^2\ln(1+x)-\frac{1}{2}x^2+x-\ln(x+1)]+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{dx}{\sqrt{x(1-4x)}}\\
+=&\int\frac{1}{\sqrt{1-(2\sqrt{x})^2}}d(2\sqrt{x})\\
+=&\arcsin(2\sqrt{x})+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{\cos\sqrt{x}-1}{\sqrt{x}\sin^2\sqrt{x}}dx\\
+=&-2\int\frac{1}{1+\cos\sqrt{x}}d\sqrt{x}\\
+=&-2\int\frac{1}{\cos^2\frac{\sqrt{x}}{2}}d\frac{\sqrt{x}}{2}\\
+=&-2\tan\frac{\sqrt{x}}{2}+C\\
+=&2\int\frac{\cos\sqrt{x}-1}{\sin^2\sqrt{x}}d\sqrt{x}\\
+=&2(\int\frac{d\sin\sqrt{x}}{\sin^2\sqrt{x}}-\int\frac{1}{\sin^2\sqrt{x}}d\sqrt{x})\\
+=&2(-\frac{1}{\sin\sqrt{x}}+\frac{1}{\tan\sqrt{x}})+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{\arcsin\sqrt{x}}{\sqrt{x(1-x)}}dx\\
+=&2\int\arcsin\sqrt{x}d\arcsin\sqrt{x}\\
+=&\arcsin^2\sqrt{x}+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{\arctan\sqrt{x}}{\sqrt{x}}dx\\
+=&2\int\arctan\sqrt{x}d\sqrt{x}\\
+=&2(t\arctan t-\frac{1}{2}\int\frac{1}{1+t^2}dt^2)\\
+=&2t\arctan t-\ln(1+t^2)+C\\
+=&2\sqrt{x}\arctan \sqrt{x}-\ln(1+x)+C\\
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{dx}{(1+x^2)\sqrt{2\arctan x+3}}\\
+=&\int\frac{d\arctan x}{\sqrt{2\arctan x+3}}\\
+=&\int\frac{d(2\arctan x+3)}{2\sqrt{2\arctan x+3}}\\
+=&\sqrt{2\arctan{x}+3}+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{(x+1)\arcsin x}{\sqrt{1-x^2}}dx\\
+=&\int\frac{x\arcsin x}{\sqrt{1-x^2}}dx+\int\frac{\arcsin x}{\sqrt{1-x^2}}dx\\
+=&-\int\frac{\arcsin x}{2\sqrt{1-x^2}}d(1-x^2)+\frac{1}{2}\arcsin^2 x\\
+=&-\int\arcsin xd\sqrt{1-x^2}+\frac{1}{2}\arcsin^2 x\\
+=&-(\arcsin x\sqrt{1-x^2}-x)+\frac{1}{2}\arcsin^2 x+C
+\end{align}
+$$
+
+$$
+\begin{align}
+(\ln\frac{1+x}{1-x})'&=\frac{1-x}{1+x}\frac{2}{(1-x)^2}=\frac{2}{1-x^2} \\
+&\int\frac{1}{1-x^2}\ln\frac{1+x}{1-x}dx\\
+=&\frac{1}{2}\int\ln\frac{1+x}{1-x}d\ln\frac{1+x}{1-x}\\
+=&\frac{1}{4}\ln^2\frac{1+x}{1-x}+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{\cos 2x}{(3+\sin x\cos x)^2}dx\\
+=&\int\frac{1}{(3+\frac{1}{2}\sin{2x})^2}d(\frac{1}{2}\sin{2x}+3)\\
+=&-\frac{2}{\sin 2x+6}+C\\
+=&\int\frac{1}{(3+\sin x\cos x)^2}d(3+\sin x\cos x)\\
+=&-\frac{1}{3+\sin x\cos x}+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{1-\ln x}{(x-\ln x)^2}dx\\
+=&\int\frac{\frac{1}{x^2}-\frac{\ln x}{x^2}}{(1-\frac{\ln x}{x})^2}dx\\
+=&\int-\frac{1}{(1-\frac{\ln x}{x})^2}d(1-\frac{\ln x}{x})\\
+=&\frac{x}{x-\ln x}+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{dx}{(2-x)\sqrt{1-x}}\\
+=&\int\frac{-1}{(1-x)\sqrt{1-x}+\sqrt{1-x}}d(1-x)\\
+=&-\int\frac{1}{(t+1)\sqrt{t}}dt\\
+=&-2\arctan\sqrt{t}+C\\
+=&-2\arctan\sqrt{1-x}+C
+\end{align}
+$$
+

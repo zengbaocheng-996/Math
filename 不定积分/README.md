@@ -623,56 +623,89 @@ $$
 \end{align}
 $$
 
----
+# 7
 
 $$
 \begin{align}
 &\int\frac{dx}{x\sqrt{x^2-1}}(x>1)\\
+=&\int\frac{d\frac{1}{\cos t}}{\frac{1}{\cos t}\sqrt{(\frac{1}{\cos t})^2-1}}\\
+=&\int1dt\\
+=&\arccos\frac{1}{x}+C
 \end{align}
 $$
 
 $$
 \begin{align}
+&\int\frac{\sqrt{x^2-1}}{x^2}dx\\
+=&\int\frac{\sqrt{(\frac{1}{\cos t})^2-1}}{(\frac{1}{\cos t})^2}d\frac{1}{\cos t}\\
+=&\int\frac{\sin t \cos t*\sin t}{\cos^2t}dx\\
+=&\int\frac{1-\cos^2 t}{\cos t}dx\\
+=&\int\frac{1}{\cos t}dx-\int\cos tdx\\
+=&\ln|\sec t+\tan t|-\sin t +C\\
+=&\ln|x+\sqrt{x^2-1}|-\frac{\sqrt{x^2-1}}{x}+C
 \end{align}
-\int\frac{\sqrt{x^2-1}}{x^2}dx
 $$
 
 $$
 \begin{align}
+&\int\frac{dx}{1+\sqrt{1-x^2}}\\
+=&\int\frac{\cos tdt}{1+\cos t}\\
+=&t-\int\frac{1-\cos t}{1-\cos^2 t}dt\\
+=&t-\int \csc^2tdt+\int\frac{d\sin t}{\sin^2t}\\
+=&t+\cot t-\csc t+C\\
+=&\arcsin x+\frac{\sqrt{1-x^2}}{x}-\frac{1}{x}+C
 \end{align}
-\int\frac{dx}{1+\sqrt{1-x^2}}
 $$
 
 $$
 \begin{align}
+&\int\frac{dx}{\sqrt{(x^2+1)^3}}\\
+=&\int\cos^3 td\tan t\\
+=&\int\cos tdt\\
+=&\sin t+C\\
+=&\frac{x}{\sqrt{1+x^2}}+C
 \end{align}
-\int\frac{dx}{\sqrt{(x^2+1)^3}}
 $$
 
 ---
 
 $$
 \begin{align}
+&\int\frac{1}{1+\sin x}dx\\
+=&\int\frac{1-\sin x}{\cos^2x}dx\\
+=&\int\frac{1}{\cos^2x}dx+\int\frac{d\cos x}{\cos^2x}\\
+=&\tan x-\sec x+C
 \end{align}
-\int\frac{1}{1+\sin x}dx
 $$
 
 $$
 \begin{align}
+&\int\frac{1}{2+\cos^2x}dx\\
+=&\int\frac{\sec^2x}{2\sec^2x+1}dx\\
+=&\int\frac{d\tan x}{2\tan^2x+3}\\
+=&\frac{1}{3}\sqrt{\frac{3}{2}}\int\frac{d\sqrt{\frac{2}{3}}\tan x}{(\sqrt{\frac{2}{3}}\tan x)^2+1}\\
+=&\frac{1}{\sqrt{6}}\arctan(\sqrt{\frac{2}{3}}\tan x)+C
 \end{align}
-\int\frac{1}{2+\cos^2x}dx
 $$
 
 $$
 \begin{align}
-\end{align}
-\int\frac{\sin x+\cos^2x}{1+\sin x}dx
+&\int\frac{\sin x+\cos^2x}{1+\sin x}dx\\
+=&\int 1dx-\int\frac{1}{1+\sin x}+\int 1-\sin xdx\\
+=&2x+\cos x-\int\frac{1}{1+\sin x}\\
+=&2x+\cos x-(\tan x-\csc x)+C
+\end{align}
 $$
 
 $$
 \begin{align}
+&\int\frac{dx}{\sin x\cos^4x}\\
+=&\int\frac{\sin^2x+\cos^2x}{\sin x\cos^4x}dx\\
+=&-\int\frac{d\cos x}{\cos^4x}+\int\frac{\sin^2x+\cos^2x}{\sin x\cos^2x}dx\\
+=&\frac{1}{3}\cos^{-3}x-\int\frac{d\cos x}{\cos^2x}+\int\frac{1}{\sin x}dx\\
+=&\frac{1}{3}\cos^{-3}x+\frac{1}{\cos x}+\int\frac{1}{\sin x}dx\\
+==&\frac{1}{3}\cos^{-3}x+\frac{1}{\cos x}+\ln(\csc x-\cot x)+C\\
 \end{align}
-\int\frac{dx}{\sin x\cos^4x}
 $$
 
 ---

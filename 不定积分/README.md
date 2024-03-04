@@ -694,7 +694,7 @@ $$
 =&\int 1dx-\int\frac{1}{1+\sin x}+\int 1-\sin xdx\\
 =&2x+\cos x-\int\frac{1}{1+\sin x}\\
 =&2x+\cos x-(\tan x-\csc x)+C
-\end{align}
+\end{align}
 $$
 
 $$
@@ -708,67 +708,118 @@ $$
 \end{align}
 $$
 
+# 8
+
+$$
+\begin{align}
+&\int x\arcsin xdx\\
+=&\frac{1}{2}\int\arcsin xdx^2\\
+=&\frac{1}{2}(x^2\arcsin x+\int \frac{-1+1-x^2}{\sqrt{1-x^2}}dx)\\
+=&\frac{1}{2}(x^2\arcsin x-\arcsin x+\int\sqrt{1-x^2}dx)\\
+=&\frac{1}{2}(x^2\arcsin x-\arcsin x+\int\sqrt{1-\sin t^2}d\sin t)\\
+=&\frac{1}{2}(x^2\arcsin x-\arcsin x+\int\cos^2tdt)\\
+=&\frac{1}{2}(x^2\arcsin x-\arcsin x+\frac{1}{2}\int\cos2t+1dt)\\
+=&\frac{1}{2}[x^2\arcsin x-\arcsin x+\frac{1}{2}(t+\frac{1}{2}\sin 2t)]\\
+=&\frac{1}{2}[x^2\arcsin x-\arcsin x+\frac{1}{2}(\arcsin x+x\sqrt{1-x^2})]+C\\
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int \arcsin^2xdx\\
+=&x\arcsin^2x-\int\frac{2x\arcsin x}{\sqrt{1-x^2}}dx\\
+=&x\arcsin^2x+\int\frac{\arcsin x}{\sqrt{1-x^2}}d(1-x^2)\\
+=&x\arcsin^2x+2\int\arcsin xd\sqrt{1-x^2}\\
+=&x\arcsin^2x+2(\sqrt{1-x^2}\arcsin x-x)+C\\
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{1+\sin x}{1+\cos x}e^x dx\\
+=&\int\frac{1+2\sin\frac{x}{2}\cos\frac{x}{2}}{2\cos^2\frac{x}{2}}e^xdx\\
+=&\int e^xd\tan\frac{x}{2}+\int 2\tan\frac{x}{2}de^x\\
+=&e^x\tan\frac{x}{2}+C
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{\sqrt{x-1}\arctan\sqrt{x-1}}{x}dx\\
+=&\int\frac{2t^2}{t^2+1}\arctan tdt\\
+=&2\int(1-\frac{1}{t^2+1})\arctan tdt\\
+=&2(\int\arctan tdt-\int\arctan td\arctan t)\\
+=&2(t\arctan t-\int\frac{t}{1+t^2}dt-\frac{1}{2}\arctan^2t)\\
+=&2(t\arctan t-\frac{1}{2}\int\frac{1}{1+t^2}d(1+t^2)-\frac{1}{2}\arctan^2t)\\
+=&2(t\arctan t-\frac{1}{2}\ln(1+t^2)-\frac{1}{2}\arctan^2t)+C\\
+=&2(\sqrt{x-1}\arctan \sqrt{x-1}-\frac{1}{2}\ln x-\frac{1}{2}\arctan^2\sqrt{x-1})+C\\
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int\frac{x\arctan x}{\sqrt{x^2+1}}dx\\
+=&\frac{1}{2}\int\frac{\arctan x}{\sqrt{x^2+1}}d(x^2+1)\\
+=&\int\arctan xd\sqrt{x^2+1}\\
+=&(\arctan x\sqrt{x^2+1}-\int\sqrt{x^2+1}d\arctan x)\\
+=&(\arctan x\sqrt{x^2+1}-\int\frac{1}{\sqrt{x^2+1}}dx)\\
+=&(\arctan x\sqrt{x^2+1}-\ln|x+\sqrt{x^2+1}|)+C\\
+\end{align}
+$$
+
+$$
+\begin{align}
+&\int x\tan x\sec^4xdx\\
+=&\int x\sin x\sec^5xdx\\
+=&\int x\sec^3xd\sec x\\
+=&\frac{1}{4}\int xd\sec^4 x\\
+=&\frac{1}{4}(x\sec^4x-\int\sec^4xdx)\\
+=&\frac{1}{4}(x\sec^4x-\int\tan^2x+1d\tan x)\\
+=&\frac{1}{4}(x\sec^4x-\frac{1}{3}\tan^3x-\tan x)+C\\
+\end{align}
+$$
+
 ---
 
 $$
 \begin{align}
+&\int\sqrt{e^x-1}dx\\
+=&\int td\ln(t^2+1)\\
+=&2\int1-\frac{1}{t^2+1}dt\\
+=&2(t-\arctan t)+C\\
+=&2(\sqrt{e^x-1}-\arctan \sqrt{e^x-1})+C\\
 \end{align}
-\int x\arcsin xdx
 $$
 
 $$
 \begin{align}
+&\int\frac{\sqrt{x}}{\sqrt{x}+1}dx\\
+=&x-\int\frac{1}{\sqrt{x}+1}dx\\
+=&x-2\int\frac{\sqrt{x}}{\sqrt{x}+1}d\sqrt{x}\\
+=&x-2(\sqrt{x}-\int\frac{1}{\sqrt{x}+1}d\sqrt{x})\\
+=&x-2[\sqrt{x}-\ln(\sqrt{x}+1)]+C
 \end{align}
-\int \arcsin^2xdx
 $$
 
 $$
 \begin{align}
+&\int\arctan\sqrt{x}dx\\
+=&x\arctan\sqrt{x}-\int xd\arctan\sqrt{x}\\
+=&x\arctan\sqrt{x}-\int\frac{x}{1+x}\frac{1}{2\sqrt{x}}dx\\
+=&x\arctan\sqrt{x}-\int(1-\frac{1}{1+x})\frac{1}{2\sqrt{x}}dx\\
+=&x\arctan\sqrt{x}-\int(1-\frac{1}{1+x})d\sqrt{x}\\
+=&x\arctan\sqrt{x}-\sqrt{x}+\arctan\sqrt{x}+C
 \end{align}
-\int\frac{1+\sin x}{1+\cos x}e^x dx
 $$
 
 $$
 \begin{align}
+&\int\ln(1+\sqrt{x})dx\\
+=&\int\ln(1+t)dt^2\\
+=&t^2\ln(1+t)-\int\frac{t^2}{1+t}dt\\
+=&t^2\ln(1+t)-\int\frac{t^2-1}{1+t}dt-\int\frac{1}{1+t}dt\\
+=&(t^2-1)\ln(1+t)-\frac{1}{2}t^2+t+C\\
+=&(x-1)\ln(1+\sqrt{x})-\frac{1}{2}x+\sqrt{x}+C\\
 \end{align}
-\int\frac{\sqrt{x-1}\arctan\sqrt{x-1}}{x}dx
-$$
-
-$$
-\begin{align}
-\end{align}
-\int\frac{x\arctan x}{\sqrt{x^2+1}}dx
-$$
-
-$$
-\begin{align}
-\end{align}
-\int x\tan x\sec^4xdx
-$$
-
----
-
-$$
-\begin{align}
-\end{align}
-\int\sqrt{e^x-1}dx
-$$
-
-$$
-\begin{align}
-\end{align}
-\int\frac{\sqrt{x}}{\sqrt{x}+1}dx
-$$
-
-$$
-\begin{align}
-\end{align}
-\int\arctan\sqrt{x}dx
-$$
-
-$$
-\begin{align}
-\end{align}
-\int\ln(1+\sqrt{x})dx
 $$
 
